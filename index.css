@@ -1,0 +1,469 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Gradient background wrapper */
+.bg-gradient {
+  background: radial-gradient(circle at 20% 30%, #1e1b4b, #0f172a 70%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-right a {
+  margin-left: 24px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #06b6d4;
+}
+
+.btn.small {
+  margin-left: 20px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  padding: 0 20px;
+}
+
+.hero-inner h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.accent {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lead {
+  color: #bdbdbd;
+  margin-bottom: 25px;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #f97316);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.7);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #06b6d4;
+  color: #06b6d4;
+}
+
+.btn.ghost:hover {
+  background: #06b6d4;
+  color: #0d0d0d;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #bdbdbd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #06b6d4;
+}
+
+/* ------------------------------
+   MAIN SECTIONS
+------------------------------ */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.3);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+/* ------------------------------
+   ABOUT SECTION
+------------------------------ */
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.info-list li {
+  margin-bottom: 8px;
+}
+
+/* ------------------------------
+   SKILLS SECTION (Now Separate)
+------------------------------ */
+#skills {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skills-grid li {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.skills-grid li:hover {
+  background: rgba(6, 182, 212, 0.2);
+}
+
+/* ------------------------------
+   SERVICES SECTION
+------------------------------ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+/* ------------------------------
+   EDUCATION SECTION
+------------------------------ */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.3);
+}
+
+.education-item h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.institute {
+  color: #bdbdbd;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.meta {
+  color: #06b6d4;
+  font-size: 0.9rem;
+}
+
+
+/* ------------------------------
+   PROJECTS SECTION
+------------------------------ */
+.project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.project-left h3 {
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.meta a {
+  color: #06b6d4;
+}
+
+/* ------------------------------
+   EXPERIENCE SECTION
+------------------------------ */
+.timeline {
+  border-left: 2px solid #06b6d4;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #f97316);
+  border-radius: 50%;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #bdbdbd;
+  margin-bottom: 6px;
+}
+
+/* ------------------------------
+   CONTACT SECTION
+------------------------------ */
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(6, 182, 212, 0.2));
+  border-radius: 16px;
+  margin-top: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section .subtitle {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 22px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+.contact-item a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #06b6d4;
+}
+
+@media (max-width: 600px) {
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ------------------------------
+   HIRE ME BUTTON ANIMATION
+------------------------------ */
+.btn.hire {
+  background: linear-gradient(90deg, #f97316, #06b6d4, #7c3aed);
+  background-size: 300% 300%;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+  animation: gradientShift 6s ease infinite, pulseGlow 2.5s infinite alternate;
+  border: none;
+}
+
+.btn.hire:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.7);
+}
+
+/* Gradient movement */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Soft glowing pulse */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(124, 58, 237, 0.4); }
+  100% { box-shadow: 0 0 25px rgba(6, 182, 212, 0.7); }
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
