@@ -1,241 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayesha Masrath — Portfolio</title>
-
-  <!-- Styles -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Ayesha Masrath is a data analyst focused on turning operational, customer, and public datasets into clear decisions through SQL, Python, Power BI, and applied machine learning."
+  />
+  <title>Ayesha Masrath | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <div id="page-wrap" class="bg-gradient">
-
-    <!-- NAV -->
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="brand" href="#home">Ayesha Masrath</a>
-      </div>
-      <div class="nav-right">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Ayesha Masrath</a>
+      <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#case-study">Case Study</a>
         <a href="#contact">Contact</a>
-        <button id="theme-toggle" class="btn small">Dark</button>
-      </div>
-    </nav>
-
-    <!-- HERO -->
-    <header id="home" class="hero">
-      <div class="hero-inner">
-        <h1>Hi, I’m <span class="accent">Ayesha Masrath</span></h1>
-        <p class="lead">Aspiring Data Scientist • AI & ML • Data Analysis & Visualization</p>
-
-        <div class="cta-row">
-          <a class="btn primary" id="download-resume"
-            href="https://drive.google.com/file/d/1RggtA_ZNayQ7SCqtXkpe9B00k8BDdWO6/view?usp=drive_link"
-            target="_blank" rel="noopener">
-            ⬇ Download Resume
-          </a>
-          <a class="btn ghost" href="#projects">View Projects</a>
-          <a class="btn hire" href="#contact">💼 Hire Me</a>
-        </div>
-
-        <div class="socials">
-          <a href="mailto:ayeshamasrath0606@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/ayesha-masrath-a7740934b" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/ayesha0606" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+      </nav>
     </header>
 
-    <!-- MAIN -->
-    <main class="container">
-
-      <!-- EDUCATION -->
-      <section id="education" class="card">
-        <h2>Education</h2>
-        <div class="education-grid">
-
-          <div class="education-item">
-            <h3>Bachelor of Technology in Artificial Intelligence & Machine Learning</h3>
-            <p class="institute">Priyadarshini Institute of Science and Technology for Women, Khammam</p>
-            <p class="meta">2022 – 2026 | CGPA: 8.19</p>
+    <main id="top">
+      <section class="hero section-visible">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Analyst Portfolio</p>
+          <h1>Turning raw data into decisions leaders can act on.</h1>
+          <p class="hero-text">
+            I analyze business, customer, and operational data to uncover patterns, quantify performance,
+            and translate findings into dashboards, recommendations, and measurable next steps.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Case-Driven Projects</a>
+            <a class="button button-secondary" href="./Ayesha-Masrath-Resume.pdf" target="_blank" rel="noreferrer" download>Download Resume</a>
+            <a class="button button-secondary" href="https://github.com/ayesha-masrath" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/ayesha-masrath-a7740934b/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
+        </div>
 
-          <div class="education-item">
-            <h3>Intermediate — MPC</h3>
-            <p class="institute">Resonance Junior College, Khammam</p>
-            <p class="meta">2020 – 2022 | Percentage: 91.4%</p>
+        <aside class="hero-panel" aria-label="Profile summary">
+          <div class="hero-panel-card">
+            <p class="panel-label">Focus Areas</p>
+            <ul class="panel-list">
+              <li>KPI analysis and performance tracking</li>
+              <li>Dashboard design for business decisions</li>
+              <li>EDA, cleaning, and trend discovery</li>
+              <li>ML prototyping for predictive use cases</li>
+              <li>B.Tech CSE (AI and ML), CGPA 8.19</li>
+            </ul>
           </div>
+        </aside>
+      </section>
 
-          <div class="education-item">
-            <h3>SSC</h3>
-            <p class="institute">St. Joseph’s High School, Khammam</p>
-            <p class="meta">2020 | GPA: 10/10</p>
-          </div>
-
+      <section class="proof section-fade" id="proof">
+        <div class="section-heading">
+          <p class="eyebrow">Proof</p>
+          <h2>Evidence of hands-on analysis work.</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>3</strong>
+            <span>analytics internships across Python, SQL, dashboarding, and exploratory analysis</span>
+          </article>
+          <article class="stat-card">
+            <strong>4</strong>
+            <span>end-to-end featured projects built with SQL, Power BI, Python, and scikit-learn</span>
+          </article>
+          <article class="stat-card">
+            <strong>4</strong>
+            <span>data domains handled across sales, restaurant intelligence, public health, and education</span>
+          </article>
+          <article class="stat-card">
+            <strong>8.19</strong>
+            <span>current CGPA in B.Tech Computer Science with specialization in AI and ML</span>
+          </article>
         </div>
       </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="card">
-        <h2>Skills</h2>
-        <p class="subtitle">Technologies and Tools I Work With</p>
-        <ul class="skills-grid">
-          <li>Python (Pandas, NumPy)</li>
-          <li>Scikit-learn</li>
-          <li>Machine-Learning</li>
-          <li>Data Visualization (Matplotlib, Seaborn, Power BI)</li>
-          <li>MySQL, PostgreSQL</li>
-          <li>Jupyter / Colab</li>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </section>
-
-      <!-- SERVICES -->
-      <section id="services" class="card">
-        <h2>Services</h2>
-        <div class="services-grid">
-          <div class="service">
-            <h4>Data Cleaning & EDA</h4>
-            <p>Cleaning, transformation, and exploratory analysis to make data model-ready and actionable.</p>
-          </div>
-          <div class="service">
-            <h4>Predictive Modeling</h4>
-            <p>Supervised models (classification/regression) — feature engineering, training & evaluation.</p>
-          </div>
-          <div class="service">
-            <h4>Generative Models</h4>
-            <p>GANs for synthetic image generation and augmenting small datasets.</p>
-          </div>
-          <div class="service">
-            <h4>Dashboards & Reporting</h4>
-            <p>Interactive dashboards and visual reports using Power BI / Looker Studio and Python visualizations.</p>
-          </div>
+      <section class="about section-fade" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Problem-solving over buzzwords.</h2>
         </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="card">
-        <h2>Projects</h2>
-
-        <div class="project">
-          <div class="project-left">
-            <h3>Smart Grade Prediction System</h3>
-            <p>Implemented KNN for grade prediction with preprocessing, encoding, and visualization.
-              Tools: Python, Pandas, Scikit-learn.
+        <div class="two-column">
+          <div>
+            <p>
+              My work starts with a business question: what is underperforming, what is changing, and where can a team act
+              with confidence? I use SQL and Python to clean and explore data, then build Power BI or notebook-based outputs
+              that make findings easy to understand.
             </p>
-            <p class="meta">Repo: <a href="https://github.com/ayesha0606" target="_blank">github.com/ayesha0606</a></p>
           </div>
-          <div class="project-right">
-            <a class="btn tiny" href="https://github.com/ayesha0606" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-left">
-            <h3>Diabetic Retinopathy Image Synthesis (GANs)</h3>
-            <p>Built a GAN-based pipeline to synthesize retinal images and augment datasets for classification tasks.</p>
-            <p class="meta">Repo: <a href="https://github.com/ayesha0606" target="_blank">github.com/ayesha0606</a></p>
-          </div>
-          <div class="project-right">
-            <a class="btn tiny" href="https://github.com/ayesha0606" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-left">
-            <h3>TAQE: Tweet Retrieval-Based Damage Assessment</h3>
-            <p>Developed a topic-aligned query expansion (TAQE) framework for retrieving tweets and assessing infrastructure damage severity.</p>
-            <p class="meta">Repo: <a href="https://github.com/ayesha0606" target="_blank">github.com/ayesha0606</a></p>
-          </div>
-          <div class="project-right">
-            <a class="btn tiny" href="https://github.com/ayesha0606" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-left">
-            <h3>Study Buddy (Full-stack)</h3>
-            <p>Full-stack web app for students — real-time chat, task tracking, and AI-guided study support.</p>
-            <p class="meta">Repo: <a href="https://github.com/ayesha0606" target="_blank">github.com/ayesha0606</a></p>
-          </div>
-          <div class="project-right">
-            <a class="btn tiny" href="https://github.com/ayesha0606" target="_blank">View on GitHub</a>
+          <div>
+            <p>
+              Across sales, restaurant, education, and health datasets, I focus on surfacing practical insights:
+              which segments drive results, which patterns need attention, and which actions can improve outcomes. That
+              combination of analysis and communication is the standard I bring to every project.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="card">
-        <h2>Experience</h2>
+      <section class="experience section-fade" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Applied analytics experience in problem -> action -> impact format.</h2>
+        </div>
         <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="period">Oct 2025 – Present</div>
-            <div class="details">
-              <h4>Data Analyst Associate Intern — Excelerate</h4>
-              <p>Performed data cleaning, analysis, visualization, and dashboarding (Looker Studio).
-                Presented data-driven insights to stakeholders.</p>
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <h3>AI-Powered Data Analysis Intern</h3>
+              <p>Excelerate (Rochester Institute of Technology)</p>
             </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="period">Sept 2025 – Oct 2025</div>
-            <div class="details">
-              <h4>Data Analyst — Cognifyz Technologies</h4>
-              <p>Data cleaning, preprocessing, EDA, and creating interactive visualizations to improve business reporting.</p>
+            <div class="timeline-body">
+              <p><strong>Problem:</strong> Real-world datasets often contain inconsistent structure, missing values, and weak visibility into the trends that matter for decision-making.</p>
+              <p><strong>Action:</strong> Performed data cleaning and exploratory data analysis in Python, identified data quality issues, and prepared structured outputs for analysis.</p>
+              <p><strong>Impact:</strong> Improved the reliability of downstream analysis and strengthened the ability to turn raw datasets into insight-ready inputs.</p>
             </div>
-          </div>
+          </article>
 
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <h3>Data Visualization Associate Intern</h3>
+              <p>Excelerate (Saint Louis University)</p>
+            </div>
+            <div class="timeline-body">
+              <p><strong>Problem:</strong> Stakeholders need dashboards built on clean, analysis-ready data rather than raw tables that are difficult to interpret or act on.</p>
+              <p><strong>Action:</strong> Cleaned and transformed datasets using PostgreSQL and Python, then designed interactive Google Looker Studio dashboards to communicate insights clearly.</p>
+              <p><strong>Impact:</strong> Improved reporting clarity and made analytical outputs easier for stakeholders to understand and use.</p>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <h3>Data Analyst Intern</h3>
+              <p>Cognifyz Technologies</p>
+            </div>
+            <div class="timeline-body">
+              <p><strong>Problem:</strong> Reporting loses value when raw datasets are not cleaned properly and trend signals remain buried inside unstructured analysis.</p>
+              <p><strong>Action:</strong> Performed preprocessing, cleaning, and exploratory analysis using Python libraries, then developed visualizations to surface trends and improve reporting clarity.</p>
+              <p><strong>Impact:</strong> Produced clearer analytical outputs and strengthened insight communication for more useful reporting.</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p class="subtitle">Get In Touch</p>
+      <section class="projects section-fade" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Each project is presented as a mini case study.</h2>
+        </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <span class="icon">📧</span>
-            <div>
-              <p><a href="mailto:ayeshamasrath0606@gmail.com">ayeshamasrath0606@gmail.com</a></p>
-              <p><a href="mailto:ayeshamasrath0606@zohomail.in">ayeshamasrath0606@zohomail.in</a></p>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-header">
+              <span class="project-tag">Power BI + SQL + Python</span>
+              <h3>Sales Performance and Customer Insights Dashboard</h3>
             </div>
-          </div>
+            <p><strong>Problem statement:</strong> Sales teams need a clear view of revenue quality, customer retention, and monthly movement to identify where growth is strong and where performance is leaking.</p>
+            <p><strong>Dataset description:</strong> Sales transaction data covering revenue, profit, average order value, repeat customers, regional performance, and monthly trends.</p>
+            <p><strong>Tools used:</strong> SQL, Python, Power BI</p>
+            <p><strong>Key insights:</strong> Evaluated revenue, profit, AOV, repeat-customer behavior, and regional patterns to distinguish high-volume performance from high-quality growth.</p>
+            <p><strong>Business impact:</strong> Enables KPI tracking, regional comparison, and better prioritization of retention and profitability instead of relying only on topline sales.</p>
+            <a class="text-link" href="https://github.com/ayesha-masrath/sales-performance-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
+          </article>
 
-          <div class="contact-item">
-            <span class="icon">📱</span>
-            <p><a href="tel:+919963810897">+91 99638 10897</a></p>
-          </div>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Power BI + Power Query + DAX</span>
+              <h3>Restaurant Data Analysis Dashboard</h3>
+            </div>
+            <p><strong>Problem statement:</strong> Restaurant operators and market analysts need to understand how cuisine mix, pricing, ratings, and delivery preferences influence customer behavior.</p>
+            <p><strong>Dataset description:</strong> Restaurant-level data covering city, locality, cuisines, online delivery, table booking, cost for two, ratings, and customer votes.</p>
+            <p><strong>Tools used:</strong> Power BI, Power Query, DAX</p>
+            <p><strong>Key insights:</strong> Analyzed patterns in cuisines, pricing, ratings, and delivery preferences to compare what combinations were associated with stronger customer response.</p>
+            <p><strong>Business impact:</strong> Supports insight-driven decision-making for service mix, market comparison, and customer preference analysis through an interactive dashboard.</p>
+            <a class="text-link" href="https://github.com/ayesha-masrath/restaurant-data-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
+          </article>
 
-          <div class="contact-item">
-            <span class="icon">💼</span>
-            <p><a href="https://linkedin.com/in/ayesha-masrath-a7740934b" target="_blank">LinkedIn Profile</a></p>
-          </div>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Python EDA</span>
+              <h3>Global Health Statistics Analysis</h3>
+            </div>
+            <p><strong>Problem statement:</strong> Public health indicators are difficult to interpret when trends are spread across regions, variables, and time-based changes.</p>
+            <p><strong>Dataset description:</strong> Global health metrics used to compare patterns, disparities, and relationships across countries or regions.</p>
+            <p><strong>Tools used:</strong> Python, Pandas, Matplotlib</p>
+            <p><strong>Key insights:</strong> Conducted EDA to identify regional patterns, variable relationships, and distribution trends across health indicators.</p>
+            <p><strong>Business impact:</strong> Demonstrates the ability to turn complex public datasets into structured insights for reporting, research, and policy-oriented analysis.</p>
+            <a class="text-link" href="https://github.com/ayesha-masrath/global-health-statistics-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
+          </article>
 
-          <div class="contact-item">
-            <span class="icon">🐙</span>
-            <p><a href="https://github.com/ayesha0606" target="_blank">GitHub Profile</a></p>
-          </div>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">ML + Deployment</span>
+              <h3>Smart Grade Prediction System</h3>
+            </div>
+            <p><strong>Problem statement:</strong> Educators need an early way to identify students at risk so interventions can happen before final performance declines.</p>
+            <p><strong>Dataset description:</strong> Historical student data with academic and behavioral variables used to predict grade categories.</p>
+            <p><strong>Tools used:</strong> Python, scikit-learn, Streamlit</p>
+            <p><strong>Key insights:</strong> Performed cleaning, EDA, feature engineering, and model evaluation using accuracy, precision, recall, and F1-score to compare model reliability.</p>
+            <p><strong>Business impact:</strong> Shows how machine learning can support earlier academic intervention by converting student data into a practical prediction workflow.</p>
+            <a class="text-link" href="https://github.com/ayesha-masrath/smart-grade" target="_blank" rel="noreferrer">View GitHub project</a>
+          </article>
         </div>
       </section>
 
+      <section class="case-study section-fade" id="case-study">
+        <div class="section-heading">
+          <p class="eyebrow">Case Study</p>
+          <h2>Deep dive: Restaurant Data Analysis Dashboard.</h2>
+        </div>
+
+        <div class="case-study-layout">
+          <article class="case-card">
+            <h3>Problem</h3>
+            <p>
+              Restaurant performance is shaped by several variables at once, including cuisine mix, pricing, ratings,
+              and delivery preference. The goal was to convert a broad restaurant dataset into a dashboard that helps
+              users compare performance drivers instead of scanning raw listings.
+            </p>
+          </article>
+
+          <article class="case-card">
+            <h3>Data cleaning steps</h3>
+            <ul class="detail-list">
+              <li>Standardized city, locality, and cuisine fields to reduce inconsistent labels.</li>
+              <li>Reviewed missing or weak values in ratings, votes, and service availability columns.</li>
+              <li>Prepared pricing and service fields for segmentation analysis.</li>
+              <li>Used Power Query to shape the dataset for Power BI modeling and interactive filtering.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <h3>Analysis approach</h3>
+            <ul class="detail-list">
+              <li>Built an interactive Power BI dashboard to analyze cuisines, pricing, ratings, and delivery preferences.</li>
+              <li>Used DAX measures to define KPIs and comparison logic across restaurant segments.</li>
+              <li>Connected delivery, pricing, and customer ratings to understand what patterns were associated with stronger response.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <h3>Visualizations</h3>
+            <ul class="detail-list">
+              <li>KPI summary cards for restaurant performance at a glance.</li>
+              <li>City and locality comparisons to identify high-activity segments.</li>
+              <li>Cuisine and price-range views to compare customer preference patterns.</li>
+              <li>Interactive filters and comparison views for service-level analysis.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <h3>Insights</h3>
+            <ul class="detail-list">
+              <li>Ratings and engagement varied meaningfully across cuisines and city segments.</li>
+              <li>Pricing bands helped reveal where value perception and customer response aligned most strongly.</li>
+              <li>Delivery preferences created a useful lens for comparing convenience-driven demand.</li>
+              <li>Combined filters made it easier to compare restaurant performance across service model, cuisine, and geography.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <h3>Final recommendations</h3>
+            <ul class="detail-list">
+              <li>Benchmark top-performing cuisine and pricing combinations before launching new strategies.</li>
+              <li>Use delivery and rating trends together when assessing service expansion opportunities.</li>
+              <li>Compare city-level performance separately instead of assuming one customer pattern fits every market.</li>
+              <li>Use dashboard filters to move from broad market review into localized decision-making faster.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-fade" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Core tools organized by how they are used.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Data Analysis</h3>
+            <p>PostgreSQL, MySQL, joins, aggregations, KPI analysis, trend analysis, customer insights, performance tracking</p>
+          </article>
+          <article class="skill-card">
+            <h3>Visualization</h3>
+            <p>Power BI, Power Query, DAX, Google Looker Studio, dashboard storytelling, stakeholder-ready reporting</p>
+          </article>
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, Pandas, NumPy, Jupyter Notebook, Google Colab, GitHub, VS Code</p>
+          </article>
+          <article class="skill-card">
+            <h3>Machine Learning</h3>
+            <p>Regression, classification, model evaluation, feature engineering, scikit-learn, accuracy, precision, recall, F1-score</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="certifications section-fade" id="certifications">
+        <div class="section-heading">
+          <p class="eyebrow">Certifications</p>
+          <h2>Relevant learning signals, kept clean and minimal.</h2>
+        </div>
+        <div class="cert-list">
+          <span>IBM SkillsBuild - Data Analysis with Python</span>
+          <span>Tata Group - GenAI Powered Data Analytics Job Simulation (Forage)</span>
+          <span>Moonshot / Scaler - Data Visualization to Deep Learning</span>
+        </div>
+      </section>
+
+      <section class="contact section-fade" id="contact">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Looking for a data analyst who can connect analysis to action.</h2>
+            <p>
+              If you are hiring for an analyst role, internship, or project-based opportunity, I would be glad to discuss
+              how I can contribute with dashboarding, SQL analysis, Python-based data cleaning, and insight-led problem solving.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:ayeshamasrath0606@gmail.com">Email Me</a>
+            <a class="button button-secondary" href="tel:+919963810897">Call</a>
+            <a class="button button-secondary" href="https://github.com/ayesha-masrath" target="_blank" rel="noreferrer">GitHub Portfolio</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>© 2025 Ayesha Masrath</p>
+    <footer class="site-footer">
+      <p>&copy; 2026 Ayesha Masrath. Built to showcase business-focused analytics work.</p>
     </footer>
-
   </div>
 
-  <!-- JS -->
   <script src="index.js"></script>
 </body>
 </html>
