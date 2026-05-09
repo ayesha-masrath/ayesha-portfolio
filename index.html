@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Ayesha Masrath is a data analyst focused on turning operational, customer, and public datasets into clear decisions through SQL, Python, Power BI, and applied machine learning."
+    content="Ayesha Masrath is a data analyst focused on turning sales, customer, and operational data into clear business decisions through SQL, Python, Power BI, and dashboard-led analysis."
   />
   <title>Ayesha Masrath | Data Analyst Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -20,11 +21,14 @@
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="#top">Ayesha Masrath</a>
+      <!-- FIX: Added Skills and Certifications to nav -->
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#case-study">Case Study</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -33,14 +37,16 @@
       <section class="hero section-visible">
         <div class="hero-copy">
           <p class="eyebrow">Data Analyst Portfolio</p>
-          <h1>Turning raw data into decisions leaders can act on.</h1>
+          <h1>Turning messy business data into decisions teams can actually use.</h1>
           <p class="hero-text">
-            I analyze business, customer, and operational data to uncover patterns, quantify performance,
-            and translate findings into dashboards, recommendations, and measurable next steps.
+            I work on the analyst problems companies care about most: cleaning unreliable data, measuring what is
+            driving performance, and building dashboards that help teams act on revenue, customer, and operational trends
+            with more confidence.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">View Case-Driven Projects</a>
-            <a class="button button-secondary" href="./Ayesha-Masrath-Resume.pdf" target="_blank" rel="noreferrer" download>Download Resume</a>
+            <!-- FIX: Spaces in filename encoded as %20 to prevent broken links in some browsers -->
+            <a class="button button-secondary" href="./Ayesha%20Masrath%20resume%20data%20analyst.pdf" download>Download Resume</a>
             <a class="button button-secondary" href="https://github.com/ayesha-masrath" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/ayesha-masrath-a7740934b/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
@@ -50,11 +56,11 @@
           <div class="hero-panel-card">
             <p class="panel-label">Focus Areas</p>
             <ul class="panel-list">
-              <li>KPI analysis and performance tracking</li>
-              <li>Dashboard design for business decisions</li>
-              <li>EDA, cleaning, and trend discovery</li>
-              <li>ML prototyping for predictive use cases</li>
-              <li>B.Tech CSE (AI and ML), CGPA 8.19</li>
+              <li>SQL analysis for performance and customer trends</li>
+              <li>Power BI dashboards built around business KPIs</li>
+              <li>Data cleaning, EDA, and insight validation in Python</li>
+              <li>Predictive modeling for early-risk use cases</li>
+              <li>B.Tech CSE (AI and ML), CGPA 8.24/10</li>
             </ul>
           </div>
         </aside>
@@ -63,24 +69,27 @@
       <section class="proof section-fade" id="proof">
         <div class="section-heading">
           <p class="eyebrow">Proof</p>
-          <h2>Evidence of hands-on analysis work.</h2>
+          <h2>Evidence backed by real analysis work.</h2>
         </div>
+        <!-- FIX: data-target attributes added so JS animateStat() counts up correctly -->
+        <!-- Without these, JS read data-target as undefined → defaulted to 0 → overwrote all numbers with "0" -->
+        <!-- FIX: Projects count updated from 3 to 4 to reflect Global Health project added -->
         <div class="stats-grid">
           <article class="stat-card">
-            <strong>3</strong>
-            <span>analytics internships across Python, SQL, dashboarding, and exploratory analysis</span>
+            <strong data-target="10000" data-suffix="+">10,000+</strong>
+            <span>sales records analyzed in SQL and Power BI to evaluate revenue, margin, AOV, and customer behavior</span>
           </article>
           <article class="stat-card">
-            <strong>4</strong>
-            <span>end-to-end featured projects built with SQL, Power BI, Python, and scikit-learn</span>
+            <strong data-target="4">4</strong>
+            <span>end-to-end portfolio projects structured from data cleaning to insight delivery and recommendations</span>
           </article>
           <article class="stat-card">
-            <strong>4</strong>
-            <span>data domains handled across sales, restaurant intelligence, public health, and education</span>
+            <strong data-target="4">4</strong>
+            <span>core analyst environments used across projects: SQL, Python, Power BI, and Excel-based reporting</span>
           </article>
           <article class="stat-card">
-            <strong>8.19</strong>
-            <span>current CGPA in B.Tech Computer Science with specialization in AI and ML</span>
+            <strong data-target="8.24" data-format="decimal" data-decimals="2" data-suffix="/10">8.24/10</strong>
+            <span>CGPA in B.Tech Computer Science Engineering with specialization in AI and ML</span>
           </article>
         </div>
       </section>
@@ -88,21 +97,20 @@
       <section class="about section-fade" id="about">
         <div class="section-heading">
           <p class="eyebrow">About</p>
-          <h2>Problem-solving over buzzwords.</h2>
+          <h2>Analysis that starts with the decision, not the dashboard.</h2>
         </div>
         <div class="two-column">
           <div>
             <p>
-              My work starts with a business question: what is underperforming, what is changing, and where can a team act
-              with confidence? I use SQL and Python to clean and explore data, then build Power BI or notebook-based outputs
-              that make findings easy to understand.
+              I approach analysis by asking a practical question first: what decision will this insight support? That mindset
+              shapes how I clean data, choose metrics, and test patterns so the final output is not just visually clear, but useful.
             </p>
           </div>
           <div>
             <p>
-              Across sales, restaurant, education, and health datasets, I focus on surfacing practical insights:
-              which segments drive results, which patterns need attention, and which actions can improve outcomes. That
-              combination of analysis and communication is the standard I bring to every project.
+              Across sales, restaurant, health, and education datasets, I focus on finding where performance differs, why it differs,
+              and what action a team should take next. I am strongest when turning raw, inconsistent data into a structured view
+              of KPIs, patterns, and tradeoffs that support better decisions.
             </p>
           </div>
         </div>
@@ -111,30 +119,34 @@
       <section class="experience section-fade" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Experience</p>
-          <h2>Applied analytics experience in problem -> action -> impact format.</h2>
+          <!-- FIX: Used HTML entity &rarr; instead of -> for proper arrow rendering -->
+          <h2>Applied analytics experience in problem &rarr; action &rarr; impact format.</h2>
         </div>
         <div class="timeline">
           <article class="timeline-card">
             <div class="timeline-meta">
               <h3>AI-Powered Data Analysis Intern</h3>
-              <p>Excelerate (Rochester Institute of Technology)</p>
+              <p>Excelerate &mdash; Rochester Institute of Technology</p>
+              <!-- FIX: Added dates to all experience cards -->
+              <span class="meta-badge">Nov &ndash; Dec 2025</span>
             </div>
             <div class="timeline-body">
-              <p><strong>Problem:</strong> Real-world datasets often contain inconsistent structure, missing values, and weak visibility into the trends that matter for decision-making.</p>
-              <p><strong>Action:</strong> Performed data cleaning and exploratory data analysis in Python, identified data quality issues, and prepared structured outputs for analysis.</p>
-              <p><strong>Impact:</strong> Improved the reliability of downstream analysis and strengthened the ability to turn raw datasets into insight-ready inputs.</p>
+              <p><strong>Problem:</strong> Real-world data is rarely analysis-ready, which makes it hard to trust trend analysis or build decisions on top of it.</p>
+              <p><strong>Action:</strong> Cleaned and profiled datasets in Python, investigated missing and inconsistent values, and structured the data for exploratory analysis.</p>
+              <p><strong>Impact:</strong> Improved data readiness for downstream analysis and created a stronger base for extracting reliable insights instead of working from noisy inputs.</p>
             </div>
           </article>
 
           <article class="timeline-card">
             <div class="timeline-meta">
               <h3>Data Visualization Associate Intern</h3>
-              <p>Excelerate (Saint Louis University)</p>
+              <p>Excelerate &mdash; Saint Louis University</p>
+              <span class="meta-badge">Oct &ndash; Nov 2025</span>
             </div>
             <div class="timeline-body">
-              <p><strong>Problem:</strong> Stakeholders need dashboards built on clean, analysis-ready data rather than raw tables that are difficult to interpret or act on.</p>
-              <p><strong>Action:</strong> Cleaned and transformed datasets using PostgreSQL and Python, then designed interactive Google Looker Studio dashboards to communicate insights clearly.</p>
-              <p><strong>Impact:</strong> Improved reporting clarity and made analytical outputs easier for stakeholders to understand and use.</p>
+              <p><strong>Problem:</strong> Stakeholders could not get clear answers from raw tables alone, especially when the data needed cleaning before reporting.</p>
+              <p><strong>Action:</strong> Used PostgreSQL and Python to prepare analysis-ready data, then built interactive Google Looker Studio dashboards around the metrics stakeholders needed to track.</p>
+              <p><strong>Impact:</strong> Turned raw reporting into a more accessible decision-support view, making trends and comparisons easier to interpret quickly.</p>
             </div>
           </article>
 
@@ -142,11 +154,12 @@
             <div class="timeline-meta">
               <h3>Data Analyst Intern</h3>
               <p>Cognifyz Technologies</p>
+              <span class="meta-badge">Sep &ndash; Oct 2025</span>
             </div>
             <div class="timeline-body">
-              <p><strong>Problem:</strong> Reporting loses value when raw datasets are not cleaned properly and trend signals remain buried inside unstructured analysis.</p>
-              <p><strong>Action:</strong> Performed preprocessing, cleaning, and exploratory analysis using Python libraries, then developed visualizations to surface trends and improve reporting clarity.</p>
-              <p><strong>Impact:</strong> Produced clearer analytical outputs and strengthened insight communication for more useful reporting.</p>
+              <p><strong>Problem:</strong> Valuable patterns were difficult to spot because the data needed preprocessing before analysis and visual reporting could begin.</p>
+              <p><strong>Action:</strong> Performed cleaning, preprocessing, and exploratory analysis with Python libraries, then visualized the most relevant patterns for reporting.</p>
+              <p><strong>Impact:</strong> Helped convert raw datasets into clearer analytical outputs so findings could be communicated with more structure and less ambiguity.</p>
             </div>
           </article>
         </div>
@@ -155,20 +168,20 @@
       <section class="projects section-fade" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Featured Projects</p>
-          <h2>Each project is presented as a mini case study.</h2>
+          <h2>Projects framed as business problems, not classroom summaries.</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
             <div class="project-header">
-              <span class="project-tag">Power BI + SQL + Python</span>
+              <span class="project-tag">Power BI + SQL</span>
               <h3>Sales Performance and Customer Insights Dashboard</h3>
             </div>
-            <p><strong>Problem statement:</strong> Sales teams need a clear view of revenue quality, customer retention, and monthly movement to identify where growth is strong and where performance is leaking.</p>
-            <p><strong>Dataset description:</strong> Sales transaction data covering revenue, profit, average order value, repeat customers, regional performance, and monthly trends.</p>
-            <p><strong>Tools used:</strong> SQL, Python, Power BI</p>
-            <p><strong>Key insights:</strong> Evaluated revenue, profit, AOV, repeat-customer behavior, and regional patterns to distinguish high-volume performance from high-quality growth.</p>
-            <p><strong>Business impact:</strong> Enables KPI tracking, regional comparison, and better prioritization of retention and profitability instead of relying only on topline sales.</p>
+            <p><strong>Business problem:</strong> Revenue alone does not show whether growth is healthy. The goal was to identify which products, regions, and customer patterns were driving profitable performance and where the business might be over-relying on a small share of sales.</p>
+            <p><strong>What was analyzed:</strong> 10,000+ sales records covering revenue, profit, average order value, repeat-customer behavior, and regional performance.</p>
+            <p><strong>Tools used:</strong> SQL, Power BI</p>
+            <p><strong>Key insights:</strong> Built KPI views for sales, profit, AOV, and retention, then used Pareto analysis to isolate the products contributing the majority of revenue. The analysis also highlighted which regions were producing stronger performance and where customer behavior differed.</p>
+            <p><strong>Why it matters:</strong> This makes it easier for a sales team to prioritize high-value products, compare regional performance, and look beyond topline revenue when making growth decisions.</p>
             <a class="text-link" href="https://github.com/ayesha-masrath/sales-performance-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
           </article>
 
@@ -177,24 +190,25 @@
               <span class="project-tag">Power BI + Power Query + DAX</span>
               <h3>Restaurant Data Analysis Dashboard</h3>
             </div>
-            <p><strong>Problem statement:</strong> Restaurant operators and market analysts need to understand how cuisine mix, pricing, ratings, and delivery preferences influence customer behavior.</p>
-            <p><strong>Dataset description:</strong> Restaurant-level data covering city, locality, cuisines, online delivery, table booking, cost for two, ratings, and customer votes.</p>
+            <p><strong>Business problem:</strong> Restaurant performance depends on multiple factors at once, but raw listings do not clearly show how cuisine, pricing, and service options influence customer response across locations.</p>
+            <p><strong>What was analyzed:</strong> Restaurant data across cities, localities, cuisines, ratings, votes, online delivery, table booking, and cost-for-two segments.</p>
             <p><strong>Tools used:</strong> Power BI, Power Query, DAX</p>
-            <p><strong>Key insights:</strong> Analyzed patterns in cuisines, pricing, ratings, and delivery preferences to compare what combinations were associated with stronger customer response.</p>
-            <p><strong>Business impact:</strong> Supports insight-driven decision-making for service mix, market comparison, and customer preference analysis through an interactive dashboard.</p>
+            <p><strong>Key insights:</strong> Cleaned the dataset for KPI reporting, compared customer preferences across cuisine and pricing tiers, and found that delivery-enabled restaurants tended to receive stronger ratings while mid-range pricing showed the most consistent customer preference.</p>
+            <p><strong>Why it matters:</strong> The dashboard helps compare local market behavior, service mix, and price positioning so operators can make better decisions on delivery strategy, target segments, and market benchmarking.</p>
             <a class="text-link" href="https://github.com/ayesha-masrath/restaurant-data-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
           </article>
 
+          <!-- NEW: Global Health Statistics Analysis project -->
           <article class="project-card">
             <div class="project-header">
-              <span class="project-tag">Python EDA</span>
+              <span class="project-tag">Python EDA + Power BI</span>
               <h3>Global Health Statistics Analysis</h3>
             </div>
-            <p><strong>Problem statement:</strong> Public health indicators are difficult to interpret when trends are spread across regions, variables, and time-based changes.</p>
-            <p><strong>Dataset description:</strong> Global health metrics used to compare patterns, disparities, and relationships across countries or regions.</p>
-            <p><strong>Tools used:</strong> Python, Pandas, Matplotlib</p>
-            <p><strong>Key insights:</strong> Conducted EDA to identify regional patterns, variable relationships, and distribution trends across health indicators.</p>
-            <p><strong>Business impact:</strong> Demonstrates the ability to turn complex public datasets into structured insights for reporting, research, and policy-oriented analysis.</p>
+            <p><strong>Business problem:</strong> Healthcare systems generate large amounts of data, but it is hard to tell which factors &mdash; access, region, or disease type &mdash; are most strongly linked to mortality outcomes without structured analysis.</p>
+            <p><strong>What was analyzed:</strong> Global health dataset covering mortality rates, healthcare access levels, recovery rates, and disease categories across multiple countries and regions.</p>
+            <p><strong>Tools used:</strong> Python (Pandas, Matplotlib, Seaborn), Power BI</p>
+            <p><strong>Key insights:</strong> Countries with low healthcare access consistently showed higher mortality. Regional variation in outcomes was more pronounced than variation across disease categories, and certain disease types showed poor recovery even at moderate access levels.</p>
+            <p><strong>Why it matters:</strong> The analysis moves from raw health records to a structured view of where intervention would have the most impact &mdash; showing how EDA and dashboarding can support evidence-based policy decisions.</p>
             <a class="text-link" href="https://github.com/ayesha-masrath/global-health-statistics-analysis" target="_blank" rel="noreferrer">View GitHub project</a>
           </article>
 
@@ -203,11 +217,11 @@
               <span class="project-tag">ML + Deployment</span>
               <h3>Smart Grade Prediction System</h3>
             </div>
-            <p><strong>Problem statement:</strong> Educators need an early way to identify students at risk so interventions can happen before final performance declines.</p>
-            <p><strong>Dataset description:</strong> Historical student data with academic and behavioral variables used to predict grade categories.</p>
+            <p><strong>Business problem:</strong> Academic intervention often happens too late. The objective was to identify whether student performance could be predicted early enough to support proactive action.</p>
+            <p><strong>What was analyzed:</strong> Student performance data with academic and behavioral variables, including attendance and study habits, to model grade outcomes.</p>
             <p><strong>Tools used:</strong> Python, scikit-learn, Streamlit</p>
-            <p><strong>Key insights:</strong> Performed cleaning, EDA, feature engineering, and model evaluation using accuracy, precision, recall, and F1-score to compare model reliability.</p>
-            <p><strong>Business impact:</strong> Shows how machine learning can support earlier academic intervention by converting student data into a practical prediction workflow.</p>
+            <p><strong>Key insights:</strong> Completed preprocessing, feature engineering, EDA, and model evaluation, then identified attendance and study habits as important predictive signals for student outcomes.</p>
+            <p><strong>Why it matters:</strong> The project shows how predictive analytics can move from descriptive reporting to early-warning decision support for educators and academic teams.</p>
             <a class="text-link" href="https://github.com/ayesha-masrath/smart-grade" target="_blank" rel="noreferrer">View GitHub project</a>
           </article>
         </div>
@@ -223,58 +237,57 @@
           <article class="case-card">
             <h3>Problem</h3>
             <p>
-              Restaurant performance is shaped by several variables at once, including cuisine mix, pricing, ratings,
-              and delivery preference. The goal was to convert a broad restaurant dataset into a dashboard that helps
-              users compare performance drivers instead of scanning raw listings.
+              Restaurant listings contain useful market signals, but the patterns are hard to see when pricing, cuisine,
+              service options, and customer ratings are spread across raw rows. The goal was to build a structured view of
+              what combinations were linked to stronger customer response across locations.
             </p>
           </article>
 
           <article class="case-card">
-            <h3>Data cleaning steps</h3>
+            <h3>Cleaning</h3>
             <ul class="detail-list">
-              <li>Standardized city, locality, and cuisine fields to reduce inconsistent labels.</li>
-              <li>Reviewed missing or weak values in ratings, votes, and service availability columns.</li>
-              <li>Prepared pricing and service fields for segmentation analysis.</li>
-              <li>Used Power Query to shape the dataset for Power BI modeling and interactive filtering.</li>
+              <li>Standardized city, locality, and cuisine values so similar entries were grouped correctly in reporting.</li>
+              <li>Reviewed missing or weak values in ratings, votes, and service fields before creating KPIs.</li>
+              <li>Prepared pricing and delivery variables for cleaner segmentation across restaurant groups.</li>
+              <li>Used Power Query to shape the model for reliable filtering and comparison inside Power BI.</li>
             </ul>
           </article>
 
           <article class="case-card">
-            <h3>Analysis approach</h3>
+            <h3>Analysis</h3>
             <ul class="detail-list">
-              <li>Built an interactive Power BI dashboard to analyze cuisines, pricing, ratings, and delivery preferences.</li>
-              <li>Used DAX measures to define KPIs and comparison logic across restaurant segments.</li>
-              <li>Connected delivery, pricing, and customer ratings to understand what patterns were associated with stronger response.</li>
-            </ul>
-          </article>
-
-          <article class="case-card">
-            <h3>Visualizations</h3>
-            <ul class="detail-list">
-              <li>KPI summary cards for restaurant performance at a glance.</li>
-              <li>City and locality comparisons to identify high-activity segments.</li>
-              <li>Cuisine and price-range views to compare customer preference patterns.</li>
-              <li>Interactive filters and comparison views for service-level analysis.</li>
+              <li>Built a multi-page Power BI dashboard to compare cuisines, price bands, ratings, and service options.</li>
+              <li>Used DAX measures to define KPIs and make segment-level comparisons easier to interpret.</li>
+              <li>Analyzed how delivery availability, cuisine type, and pricing aligned with ratings and customer engagement.</li>
             </ul>
           </article>
 
           <article class="case-card">
             <h3>Insights</h3>
             <ul class="detail-list">
-              <li>Ratings and engagement varied meaningfully across cuisines and city segments.</li>
-              <li>Pricing bands helped reveal where value perception and customer response aligned most strongly.</li>
-              <li>Delivery preferences created a useful lens for comparing convenience-driven demand.</li>
-              <li>Combined filters made it easier to compare restaurant performance across service model, cuisine, and geography.</li>
+              <li>Delivery-enabled restaurants showed stronger rating patterns than comparable non-delivery segments.</li>
+              <li>Mid-range pricing appeared more attractive than higher-cost tiers when customer preference was compared across groups.</li>
+              <li>Performance patterns varied by cuisine and geography, which means one market view would have been misleading.</li>
+              <li>Interactive filtering helped isolate where service model, pricing, and cuisine overlapped to produce better response.</li>
             </ul>
           </article>
 
           <article class="case-card">
-            <h3>Final recommendations</h3>
+            <h3>Recommendations</h3>
             <ul class="detail-list">
-              <li>Benchmark top-performing cuisine and pricing combinations before launching new strategies.</li>
-              <li>Use delivery and rating trends together when assessing service expansion opportunities.</li>
-              <li>Compare city-level performance separately instead of assuming one customer pattern fits every market.</li>
-              <li>Use dashboard filters to move from broad market review into localized decision-making faster.</li>
+              <li>Benchmark strong cuisine-price combinations before entering a new locality or adjusting positioning.</li>
+              <li>Treat delivery as a strategic lever, not just an operational feature, when evaluating customer demand.</li>
+              <li>Review pricing decisions at the city or locality level rather than assuming one preference pattern applies everywhere.</li>
+              <li>Use dashboard filters to support targeted comparisons before making service expansion decisions.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <h3>Business Value</h3>
+            <ul class="detail-list">
+              <li>The output turns a broad restaurant dataset into a decision tool for pricing, market comparison, and service strategy.</li>
+              <li>It demonstrates an analyst workflow from cleaning and modeling to insight generation and action-oriented recommendations.</li>
+              <li>It also shows the ability to move beyond descriptive charts into analysis tied to specific business questions.</li>
             </ul>
           </article>
         </div>
@@ -283,24 +296,24 @@
       <section class="skills section-fade" id="skills">
         <div class="section-heading">
           <p class="eyebrow">Skills</p>
-          <h2>Core tools organized by how they are used.</h2>
+          <h2>Skills organized around real analyst workflows.</h2>
         </div>
         <div class="skills-grid">
           <article class="skill-card">
-            <h3>Data Analysis</h3>
-            <p>PostgreSQL, MySQL, joins, aggregations, KPI analysis, trend analysis, customer insights, performance tracking</p>
+            <h3>Querying &amp; Data Preparation</h3>
+            <p>SQL (PostgreSQL, MySQL, Oracle), joins, aggregations, filtering, cleaning, transformation, Power Query</p>
           </article>
           <article class="skill-card">
-            <h3>Visualization</h3>
-            <p>Power BI, Power Query, DAX, Google Looker Studio, dashboard storytelling, stakeholder-ready reporting</p>
+            <h3>Analysis &amp; Decision Support</h3>
+            <p>EDA, KPI tracking, trend analysis, customer behavior analysis, segmentation, statistical analysis, feature engineering</p>
           </article>
           <article class="skill-card">
-            <h3>Programming</h3>
-            <p>Python, Pandas, NumPy, Jupyter Notebook, Google Colab, GitHub, VS Code</p>
+            <h3>BI &amp; Reporting</h3>
+            <p>Power BI, DAX, Google Looker Studio, Excel, pivot tables, charts, dashboard design, insight communication</p>
           </article>
           <article class="skill-card">
-            <h3>Machine Learning</h3>
-            <p>Regression, classification, model evaluation, feature engineering, scikit-learn, accuracy, precision, recall, F1-score</p>
+            <h3>Python &amp; Modeling</h3>
+            <p>Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Jupyter Notebook, model evaluation, regression, classification</p>
           </article>
         </div>
       </section>
@@ -311,9 +324,9 @@
           <h2>Relevant learning signals, kept clean and minimal.</h2>
         </div>
         <div class="cert-list">
-          <span>IBM SkillsBuild - Data Analysis with Python</span>
-          <span>Tata Group - GenAI Powered Data Analytics Job Simulation (Forage)</span>
-          <span>Moonshot / Scaler - Data Visualization to Deep Learning</span>
+          <span>HackerRank &mdash; Python (Basic)</span>
+          <span>IBM SkillsBuild &mdash; Data Analysis with Python</span>
+          <span>Tata Group &mdash; GenAI Powered Data Analytics Job Simulation (Forage)</span>
         </div>
       </section>
 
@@ -321,10 +334,10 @@
         <div class="contact-panel">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>Looking for a data analyst who can connect analysis to action.</h2>
+            <h2>Open to data analyst roles where business questions need clear answers.</h2>
             <p>
-              If you are hiring for an analyst role, internship, or project-based opportunity, I would be glad to discuss
-              how I can contribute with dashboarding, SQL analysis, Python-based data cleaning, and insight-led problem solving.
+              If you are hiring for a data analyst role, I can contribute through SQL analysis, Python-based data preparation,
+              KPI dashboarding, and structured insight communication that helps teams move from raw data to action.
             </p>
           </div>
           <div class="contact-actions">
