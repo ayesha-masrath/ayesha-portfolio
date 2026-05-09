@@ -1,13 +1,23 @@
-# Ayesha Portfolio
+# Ayesha Masrath – Portfolio
 
-Professional data analyst portfolio built with HTML, CSS, and JavaScript.
+Aspiring Machine Learning Engineer and Data Analyst passionate about building AI-driven solutions and extracting insights from data. Skilled in Python, SQL, Power BI, Machine Learning, Data Visualisation, and Full-Stack Development.  
 
-## Highlights
+This portfolio showcases my projects, technical skills, certifications, and experience in Data Science, AI/ML, and analytics.  
 
-- Business-focused portfolio structure with proof, experience, projects, and a deep case study
-- Responsive layout with subtle motion and clean visual hierarchy
-- Featured projects rewritten as analyst case studies instead of generic project summaries
+## Skills
+- Python, Pandas, NumPy, Scikit-learn
+- SQL (MySQL, PostgreSQL)
+- Power BI, Excel, Data Visualisation
+- Machine Learning & Data Analysis
+- HTML, CSS, GitHub
+- Jupyter Notebook, VS Code, Google Colab
 
-## Run locally
+## Featured Projects
+- Smart Grade Prediction System using KNN
+- Diabetic Retinopathy Image Synthesis using GANs
+- TAQE: Tweet Retrieval-Based Infrastructure Damage Assessment
+- Study Buddy – Full-Stack Student Collaboration Platform
 
-Open `index.html` in a browser or serve the folder with any static server.
+## Goal
+ B.Tech in CSE (AI & ML) and aiming to build a career as a Data Analyst.
+
